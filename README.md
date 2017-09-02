@@ -1,5 +1,6 @@
 # Automaildoc
 
+[![Gem Version](https://badge.fury.io/rb/automaildoc.svg)](https://badge.fury.io/rb/automaildoc)
 [![Build Status](https://travis-ci.org/ohbarye/automaildoc.svg?branch=master)](https://travis-ci.org/ohbarye/automaildoc)
 
 Automaildoc is a gem to generate a list of about mails from your mail spec.
