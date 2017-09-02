@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["over.rye@gmail.com"]
 
   spec.summary       = "Generate mail preview from your mail spec"
-  spec.description   = "Generate mail preview from your mail spec"
+  spec.description   = "Automaildoc is a gem to generate a list of about mails from your mail spec."
   spec.homepage      = "https://github.com/ohbarye/automaildoc"
   spec.license       = "MIT"
 
