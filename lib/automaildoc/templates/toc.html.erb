@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      }
+      .badge-default {
+        background-color: #636c72;
+      }
+      .badge {
+        display: inline-block;
+        padding: .25em .4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25rem;
+      }
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      h3 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 1.75rem;
+        font-weight: 500;
+        color: gray;
+      }
+      pre {
+        word-break: break-all;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: pre-line;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap;
+        word-wrap: break-word;
+        background-color: rgb(247, 247, 249);
+        padding: 1em;
+        font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        font-size: 90%;
+      }
+      .container {
+        padding: 24px 16px;
+      }
+      .row {
+        display: block;
+        margin: 8px 0px;
+      }
+      .container .row .col-sm-4 {
+        margin: 0px -8px;
+        padding: 0px 8px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      @media screen and (min-width:768px) {
+        .container .row .col-sm-4 {
+          width: 33%;
+        }
+      }
+      .container .row .col-sm-8 {
+        margin: 0px -8px;
+        padding: 0px 8px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      @media screen and (min-width:768px) {
+        .container .row .col-sm-8 {
+          width: 66%;
+        }
+      }
+      hr {
+        margin: 16px 0px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Mail List</h2>
+          <ul>
+            <% @mails.each do |mail| %>
+              <li>
+                <a href="#<%= mail.id %>"><%= mail.subject %></a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+
+        <div class="col-sm-8">
+          <h2>Mail Details</h2>
+          <% @mails.each do |mail| %>
+            <%= mail.render %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

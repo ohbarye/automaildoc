@@ -1,0 +1,25 @@
+<div id="<%= id %>" class="mail">
+  <h3><%= description %></h3>
+  <div class="row">
+    TO:
+    <% to.each do |mail| %>
+      <span class="badge badge-default"><%= mail %></span>
+    <% end %>
+  </div>
+  <div class="row">
+    CC:
+    <% cc.each do |mail| %>
+      <span class="badge badge-default"><%= mail %></span>
+    <% end %>
+  </div>
+  <div class="row">
+    BCC:
+    <% bcc.each do |mail| %>
+      <span class="badge badge-default"><%= mail %></span>
+    <% end %>
+  </div>
+  <pre><%= subject %></pre>
+  <pre><%= body %></pre>
+</div>
+
+<hr>
