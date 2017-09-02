@@ -58,9 +58,9 @@ You can see `spec/dummy/doc/toc.html` in this repository, which is auto-generate
 - toc_html_template - [String] ERB template for table of content (default: `./automaildoc/templates/toc.html.erb`)
 
 ```ruby
-Autodoc.configuration.path = "doc/mails"
-Autodoc.configuration.html_template = File.read(File.expand_path("../automaildoc/templates/mail.html.erb", __FILE__))
-Autodoc.configuration.toc_html_template = File.read(File.expand_path("../automaildoc/templates/toc.html.erb", __FILE__))
+Automaildoc.configuration.path = "doc/mails"
+Automaildoc.configuration.html_template = File.read(File.expand_path("../automaildoc/templates/mail.html.erb", __FILE__))
+Automaildoc.configuration.toc_html_template = File.read(File.expand_path("../automaildoc/templates/toc.html.erb", __FILE__))
 ```
 
 ## Development
