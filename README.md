@@ -1,5 +1,7 @@
 # Automaildoc
 
+[![Build Status](https://travis-ci.org/ohbarye/automaildoc.svg?branch=master)](https://travis-ci.org/ohbarye/automaildoc)
+
 Automaildoc is a gem to generate a list of about mails from your mail spec.
 
 ![image](https://user-images.githubusercontent.com/1811616/29994119-f963a9d2-9002-11e7-990f-cf71add83b4d.png)
