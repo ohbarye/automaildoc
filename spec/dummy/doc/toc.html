@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      }
+      .badge-default {
+        background-color: #636c72;
+      }
+      .badge {
+        display: inline-block;
+        padding: .25em .4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25rem;
+      }
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      h3 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 1.75rem;
+        font-weight: 500;
+        color: gray;
+      }
+      pre {
+        word-break: break-all;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: pre-line;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap;
+        word-wrap: break-word;
+        background-color: rgb(247, 247, 249);
+        padding: 1em;
+        font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        font-size: 90%;
+      }
+      .container {
+        padding: 24px 16px;
+      }
+      .row {
+        display: block;
+        margin: 8px 0px;
+      }
+      .container .row .col-sm-4 {
+        margin: 0px -8px;
+        padding: 0px 8px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      @media screen and (min-width:768px) {
+        .container .row .col-sm-4 {
+          width: 33%;
+        }
+      }
+      .container .row .col-sm-8 {
+        margin: 0px -8px;
+        padding: 0px 8px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      @media screen and (min-width:768px) {
+        .container .row .col-sm-8 {
+          width: 66%;
+        }
+      }
+      hr {
+        margin: 16px 0px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Mail List</h2>
+          <ul>
+            
+              <li>
+                <a href="#./spec/mails/meetup_spec.rb[1:1]">How about pair programming session?</a>
+              </li>
+            
+              <li>
+                <a href="#./spec/mails/signup_spec.rb[1:1]">Welcome to our awesome new service!</a>
+              </li>
+            
+          </ul>
+        </div>
+
+        <div class="col-sm-8">
+          <h2>Mail Details</h2>
+          
+            <div id="./spec/mails/meetup_spec.rb[1:1]" class="mail">
+  <h3>Meetup mail should sent to user</h3>
+  <div class="row">
+    TO:
+    
+      <span class="badge badge-default">veteran@example.com</span>
+    
+  </div>
+  <div class="row">
+    CC:
+    
+  </div>
+  <div class="row">
+    BCC:
+    
+  </div>
+  <pre>How about pair programming session?</pre>
+  <pre>Hey, Chris!      
+
+As you know, we keep the meetups on a regular monthly basis: the first Monday of the month, at 7:30pm.
+
+Due to the vacation constraints of this season, the August session will be held on the 14th (i.e. the 2nd Monday).
+
+Apart from that, same place, same time. 🎉 
+
+----------------------------------------------------
+
+Awesome Startup
+https://awesome.example.com/
+</pre>
+</div>
+
+<hr>
+
+          
+            <div id="./spec/mails/signup_spec.rb[1:1]" class="mail">
+  <h3>Sign up mail should sent to user</h3>
+  <div class="row">
+    TO:
+    
+      <span class="badge badge-default">early-adoptor@example.com</span>
+    
+  </div>
+  <div class="row">
+    CC:
+    
+  </div>
+  <div class="row">
+    BCC:
+    
+      <span class="badge badge-default">customer-support@example.com</span>
+    
+      <span class="badge badge-default">data-analysis@example.com</span>
+    
+  </div>
+  <pre>Welcome to our awesome new service!</pre>
+  <pre>Hello Johns Lee!
+
+You’ve recently signed up to our <br>Awesome Product</br>, and we hope that you’ve noticed that there is much more to it than boring one.
+
+Let’s see what else you can do on our product.
+
+----------------------------------------------------
+
+Awesome Startup
+https://awesome.example.com/
+</pre>
+</div>
+
+<hr>
+
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
