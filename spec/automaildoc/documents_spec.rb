@@ -11,7 +11,7 @@ RSpec.describe Automaildoc::Documents do
     end
 
     let(:context) do
-      mock = double(example: example, mail: mail, file_path: file_path, full_description: full_description)
+      mock = double(example: example, mail: mail, file_path: file_path, description: description)
       allow(mock).to receive_messages(clone: mock)
       mock
     end
@@ -44,7 +44,7 @@ RSpec.describe Automaildoc::Documents do
     }
 
     context "with GET /recipes spec" do
-      let(:full_description) { "Sign up mail should sent to user" }
+      let(:description) { "Sign up mail should sent to user" }
       let(:file_path) { "spec/mails/signup_spec.rb" }
 
       subject { toc_html = documents.send(:render_toc_html) }
@@ -55,6 +55,10 @@ RSpec.describe Automaildoc::Documents do
 
       it "includes mail info" do
         expect(subject).to include(mail.subject)
+      end
+
+      it "includes descrition defined in spec" do
+        expect(subject).to include('Sign up mail should sent to user')
       end
     end
   end

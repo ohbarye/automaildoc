@@ -16,7 +16,11 @@ module Automaildoc
     end
 
     def description
-      @example.full_description
+      if @context.respond_to?(:description)
+        @context.description.strip
+      else
+        @example.full_description
+      end
     end
 
     def mail

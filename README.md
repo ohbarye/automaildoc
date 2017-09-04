@@ -58,6 +58,18 @@ That's it. Then Automaildoc generates an HTML file to `./doc/mails`. The file sh
 
 You can see `spec/dummy/doc/toc.html` in this repository, which is auto-generated one from mail specs in `spec/mails`.
 
+### Custom description
+
+You can write descriptions with let(:description).
+
+```ruby
+describe 'Sign up mail', automaildoc: true do
+  let(:description) { 'Sign up mail for newly signed up user' }
+
+  # examples follow
+end
+```
+
 ### Configuration
 
 - path - [String] location to put files (default: `./doc/mails`)

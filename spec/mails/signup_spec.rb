@@ -2,6 +2,7 @@ require "spec_helper"
 require "mail"
 
 RSpec.describe 'Sign up mail', automaildoc: true do
+  let(:description) { 'Sign up mail for newly signed up user' }
   let!(:mail) {
     Mail.new do
       from    'awesome-startup@example.com'
