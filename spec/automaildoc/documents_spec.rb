@@ -17,7 +17,7 @@ RSpec.describe Automaildoc::Documents do
     end
 
     let(:example) do
-      mock = double(id: 1, file_path: file_path, full_description: full_description)
+      mock = double(id: 1, file_path: file_path)
       allow(mock).to receive_messages(clone: mock)
       mock
     end
