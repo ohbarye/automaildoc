@@ -79,6 +79,17 @@
           width: 66%;
         }
       }
+      a.link-to-mail {
+        word-break: break-all;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: pre-line;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap;
+        word-wrap: break-word;
+      }
       hr {
         margin: 16px 0px
       }
@@ -92,7 +103,7 @@
           <ul>
             <% @mails.each do |mail| %>
               <li>
-                <a href="#<%= mail.id %>"><%= mail.description %></a>
+                <a class="link-to-mail" href="#<%= mail.id %>"><%= mail.description %></a>
               </li>
             <% end %>
           </ul>
