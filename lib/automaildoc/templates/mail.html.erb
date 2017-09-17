@@ -18,8 +18,20 @@
       <span class="badge badge-default"><%= mail %></span>
     <% end %>
   </div>
+
+  <h4>Subject</h4>
   <pre><%= subject %></pre>
-  <pre><%= body %></pre>
+
+  <h4>Body</h4>
+  <% if multipart? %>
+    <h5><%= html_part.content_type %></h5>
+    <pre><%= html_part.body %></pre>
+
+    <h5><%= text_part.content_type %></h5>
+    <pre><%= text_part.body %></pre>
+  <% else %>
+    <pre><%= body %></pre>
+  <% end %>
 </div>
 
-<hr>
+<hr/>
