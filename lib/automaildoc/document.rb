@@ -46,5 +46,17 @@ module Automaildoc
     def body
       mail.body || ''
     end
+
+    def multipart?
+      mail.multipart?
+    end
+
+    def text_part
+      mail.text_part
+    end
+
+    def html_part
+      mail.html_part
+    end
   end
 end
