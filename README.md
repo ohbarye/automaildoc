@@ -5,7 +5,7 @@
 
 Automaildoc is a gem to generate a list of about mails from your mail spec.
 
-![image](https://user-images.githubusercontent.com/1811616/29994119-f963a9d2-9002-11e7-990f-cf71add83b4d.png)
+![image](https://user-images.githubusercontent.com/1811616/30522089-771f2474-9c05-11e7-8f9f-ed8f828c18b8.png)
 
 This gem, idea, design all are completely inspired by the awesome predecessor, https://github.com/r7kamura/autodoc.
 
