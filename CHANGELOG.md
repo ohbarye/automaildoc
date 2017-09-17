@@ -1,5 +1,11 @@
 ## Change Log
 
+### 0.1.3
+
+#### Improvements
+
+- Show html part and text part both if an email has multiparts.
+
 ### 0.1.2
 
 #### Fixes
